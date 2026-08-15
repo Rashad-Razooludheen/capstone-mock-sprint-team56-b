@@ -14,7 +14,7 @@ export default async function DashboardPage() {
     ? (profileSnap.data()?.displayName as string | null)
     : null
   const greetingName = displayName ?? session?.email ?? null
-
+  await requireAuth()
   return (
     <div className="space-y-6">
       <div style="font-family: Arial, sans-serif; background-color: #f3f3f3; margin: 0; padding: 20px;">
