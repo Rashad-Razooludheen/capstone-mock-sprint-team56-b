@@ -28,6 +28,8 @@ export default async function DashboardPage() {
             style={{
               textAlign: 'center',
               marginBottom: '5px',
+              color: "black",
+              fontWeight: 'bold',
             }}
           >
             Team 56B
@@ -37,8 +39,8 @@ export default async function DashboardPage() {
             style={{
               textAlign: 'center',
               marginTop: 0,
-              color: '#555',
-            }}
+              color: "black",
+              fontWeight: 'bold',  }}
           >
             Meet the team!
           </h2>
@@ -73,13 +75,18 @@ export default async function DashboardPage() {
               />
 
               <div>
-                <h3 style={{ margin: '0 0 5px' }}>
+                <h3 style={{ margin: '0 0 5px'
+                  ,
+                  color: "black",
+                  fontWeight: 'bold',
+                }}>
                   Rashad Razooludheen
                 </h3>
 
                 <p
                   style={{
                     margin: '0 0 8px',
+                    color: "black",
                     fontWeight: 'bold',
                   }}
                 >
@@ -89,7 +96,7 @@ export default async function DashboardPage() {
                 <p
                   style={{
                     margin: 0,
-                    color: '#555',
+                    color: "black",
                     textAlign: 'justify',
                   }}
                 >
@@ -122,11 +129,16 @@ export default async function DashboardPage() {
               />
 
               <div>
-                <h3 style={{ margin: '0 0 5px' }}>Minji Kim</h3>
+                <h3 style={{ margin: '0 0 5px'
+                  ,
+                  color: "black",
+                  fontWeight: 'bold',
+                }}>Minji Kim</h3>
 
                 <p
                   style={{
                     margin: '0 0 8px',
+                    color: "black",
                     fontWeight: 'bold',
                   }}
                 >
@@ -136,8 +148,9 @@ export default async function DashboardPage() {
                 <p
                   style={{
                     margin: 0,
-                    color: '#555',
                     textAlign: 'justify',
+                    color: "black",
+
                   }}
                 >
                   I am currently in my final semester of Bachelor of IT, with
@@ -170,11 +183,15 @@ export default async function DashboardPage() {
               />
 
               <div>
-                <h3 style={{ margin: '0 0 5px' }}>Satyam Sharma</h3>
+                <h3 style={{ margin: '0 0 5px',
+                  color: "black",
+                  fontWeight: 'bold',
+                 }}>Satyam Sharma</h3>
 
                 <p
                   style={{
                     margin: '0 0 8px',
+                     color: "black",
                     fontWeight: 'bold',
                   }}
                 >
@@ -184,7 +201,7 @@ export default async function DashboardPage() {
                 <p
                   style={{
                     margin: 0,
-                    color: '#555',
+                    color: "black",
                     textAlign: 'justify',
                   }}
                 >
@@ -219,11 +236,17 @@ export default async function DashboardPage() {
               />
 
               <div>
-                <h3 style={{ margin: '0 0 5px' }}>Kaelan Grainger</h3>
+                <h3 style={{
+                  margin: '0 0 5px',
+                  color: "black",
+                  fontWeight: 'bold',
+
+                 }}>Kaelan Grainger</h3>
 
                 <p
                   style={{
                     margin: '0 0 8px',
+                    color: "black",
                     fontWeight: 'bold',
                   }}
                 >
@@ -233,7 +256,7 @@ export default async function DashboardPage() {
                 <p
                   style={{
                     margin: 0,
-                    color: '#555',
+                    color: "black",
                     textAlign: 'justify',
                   }}
                 >
