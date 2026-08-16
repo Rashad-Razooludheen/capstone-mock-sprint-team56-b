@@ -30,7 +30,7 @@ export default async function DashboardPage() {
             <div>
               <h3 style="margin: 0 0 5px;">Rashad Razooludheen</h3>
               <p style="margin: 0 0 8px; font-weight: bold;">Project Manager</p>
-              <p style="margin: 0; color: #555;">Placeholder Info</p>
+              <p style="margin: 0; color: #555;text-align:justify;">Placeholder Info</p>
             </div>
           </div>
           <div style="background-color: #d9f2d9; padding: 15px 20px; border-radius: 8px; display: flex; gap: 15px;">
@@ -39,7 +39,7 @@ export default async function DashboardPage() {
             <div>
               <h3 style="margin: 0 0 5px;">Minji Kim</h3>
               <p style="margin: 0 0 8px; font-weight: bold;">Business Analyst</p>
-              <p style="margin: 0; color: #555;">Placeholder Info</p>
+              <p style="margin: 0; color: #555;text-align:justify;">Placeholder Info</p>
             </div>
           </div>
           <div style="background-color: #d9f2d9; padding: 15px 20px; border-radius: 8px; display: flex; gap: 15px;">
@@ -48,7 +48,7 @@ export default async function DashboardPage() {
             <div>
               <h3 style="margin: 0 0 5px;">Satyam Sharma</h3>
               <p style="margin: 0 0 8px; font-weight: bold;">UX and Developer</p>
-              <p style="margin: 0; color: #555;">Placeholder Info</p>
+              <p style="margin: 0; color: #555;text-align:justify;">I'm a final-semester Bachelor of IT student with a strong interest in data science, algorithms and software development. I enjoy problem-solving and learning how different technologies work. Outside of IT, I enjoy going to the gym and trying out new recipes at home.</p>
             </div>
           </div>
           <div style="background-color: #d9f2d9; padding: 15px 20px; border-radius: 8px; display: flex; gap: 15px;">
@@ -57,7 +57,7 @@ export default async function DashboardPage() {
             <div>
               <h3 style="margin: 0 0 5px;">Kaelan Grainger</h3>
               <p style="margin: 0 0 8px; font-weight: bold;">UX and Developer</p>
-              <p style="margin: 0; color: #555;">Placeholder Info</p>
+              <p style="margin: 0; color: #555;text-align:justify;">I'm Kaelan and I am in my final semester (5th year) of Bachelor of Computer & Network Eng / Computer Science. I specialise in low level and embedded development (such as C, Assembly code etc) as well as network communications / database operations. I also have a lot of experience developing backend code in python.</p>
             </div>
           </div>
 
