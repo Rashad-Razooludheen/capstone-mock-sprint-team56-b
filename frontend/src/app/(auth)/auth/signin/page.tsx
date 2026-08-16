@@ -64,14 +64,16 @@ export default function SignInPage() {
   return (
     <div className="space-y-6">
       <div className="space-y-1 text-center">
-        <h1 className="text-2xl font-bold tracking-tight">Sign in</h1>
-        <p className="text-sm text-zinc-500">Enter your credentials to continue</p>
+        <h1 className="text-2xl font-bold tracking-tight text-black dark:text-white">Sign in</h1>
+        <p className="text-sm text-black dark:text-white">Enter your email and password to continue</p>
       </div>
 
       <button
         type="button"
         onClick={handleGoogleSignIn}
-        className="flex w-full items-center justify-center gap-3 rounded-md border border-zinc-300 bg-white px-4 py-2.5 text-sm font-medium shadow-sm transition-colors hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:bg-zinc-800"
+
+        className="flex w-full items-center justify-center gap-3 rounded-none border border-zinc-300 bg-zinc-200 px-4 py-2.5 text-sm font-medium text-black shadow-sm transition-colors hover:bg-zinc-300 dark:border-slate-400 dark:bg-slate-300 dark:text-black dark:hover:bg-slate-200"
+
       >
         <svg className="h-4 w-4" viewBox="0 0 24 24" aria-hidden="true">
           <path
@@ -96,10 +98,10 @@ export default function SignInPage() {
 
       <div className="relative">
         <div className="absolute inset-0 flex items-center">
-          <span className="w-full border-t border-zinc-200 dark:border-zinc-700" />
+          <span className="w-full border-t border-zinc-200 dark:border-white" />
         </div>
         <div className="relative flex justify-center text-xs uppercase">
-          <span className="bg-zinc-50 px-2 text-zinc-400 dark:bg-zinc-950">or</span>
+          <span className="bg-indigo-50 px-2 text-white dark:bg-indigo-900">or</span>
         </div>
       </div>
 
@@ -114,12 +116,15 @@ export default function SignInPage() {
             autoComplete="email"
             aria-invalid={!!errors.email}
             aria-describedby={errors.email ? 'email-error' : undefined}
-            className="w-full rounded-md border border-zinc-300 bg-white px-3 py-2 text-sm shadow-sm placeholder:text-zinc-400 focus:ring-2 focus:ring-zinc-500 focus:outline-none aria-invalid:border-red-500 dark:border-zinc-700 dark:bg-zinc-900"
+
+          className="w-full rounded-none border border-zinc-300 bg-zinc-100 px-3 py-2 text-centertext-sm text-black shadow-sm placeholder:text-zinc-500 focus:ring-2 focus:ring-zinc-300 focus:outline-none aria-invalid:border-red-500 dark:border-slate-500 dark:bg-slate-400 dark:text-white dark:placeholder:text-slate-200 dark:focus:ring-slate-500"
             placeholder="you@example.com"
+
             {...register('email')}
           />
           {errors.email && (
-            <p id="email-error" className="text-xs text-red-500" role="alert">
+            <p id="email-error" className="bg-red-500 px-2 py-1 text-xs text-white"
+              role="alert">
               {errors.email.message}
             </p>
           )}
@@ -137,12 +142,14 @@ export default function SignInPage() {
             autoComplete="current-password"
             aria-invalid={!!errors.password}
             aria-describedby={errors.password ? 'password-error' : undefined}
-            className="w-full rounded-md border border-zinc-300 bg-white px-3 py-2 text-sm shadow-sm placeholder:text-zinc-400 focus:ring-2 focus:ring-zinc-500 focus:outline-none aria-invalid:border-red-500 dark:border-zinc-700 dark:bg-zinc-900"
+
+            className="w-full rounded-none border border-zinc-300 bg-zinc-100 px-3 py-2 text-center text-sm text-black shadow-sm placeholder:text-zinc-500 focus:ring-2 focus:ring-zinc-300 focus:outline-none aria-invalid:border-red-500 dark:border-slate-500 dark:bg-slate-400 dark:text-white dark:placeholder:text-slate-200 dark:focus:ring-slate-500"
+
             placeholder="••••••••"
             {...register('password')}
           />
           {errors.password && (
-            <p id="password-error" className="text-xs text-red-500" role="alert">
+            <p id="password-error" className="bg-red-500 px-2 py-1 text-xs text-white" role="alert">
               {errors.password.message}
             </p>
           )}
@@ -151,17 +158,18 @@ export default function SignInPage() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full rounded-md bg-black px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-zinc-800 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
+
+          className="w-2/5 mx-auto block rounded-none border border-zinc-300 bg-zinc-200 px-4 py-2.5 text-sm font-medium text-black transition-colors hover:bg-zinc-300 disabled:cursor-not-allowed disabled:opacity-50 dark:border-slate-400 dark:bg-slate-300 dark:text-black dark:hover:bg-slate-200"
         >
           {isSubmitting ? 'Signing in…' : 'Sign in'}
         </button>
       </form>
 
-      <p className="text-center text-sm text-zinc-500">
+      <p className="text-center text-sm text-black dark:text-white">
         Don&apos;t have an account?{' '}
         <Link
           href="/auth/signup"
-          className="font-medium text-zinc-900 hover:underline dark:text-white"
+          className="font-medium text-black underline dark:text-white"
         >
           Create one
         </Link>
