@@ -30,16 +30,16 @@ export default async function DashboardPage() {
             <div>
               <h3 style="margin: 0 0 5px;">Rashad Razooludheen</h3>
               <p style="margin: 0 0 8px; font-weight: bold;">Project Manager</p>
-              <p style="margin: 0; color: #555;text-align:justify;">Placeholder Info</p>
+              <p style="margin: 0; color: #555;text-align:justify;">I'm Rashad, a third-year Computer Science student at RMIT University with a strong interest in Artificial Intelligence and Machine Learning.</p>
             </div>
           </div>
           <div style="background-color: #d9f2d9; padding: 15px 20px; border-radius: 8px; display: flex; gap: 15px;">
-            <img src="minji_kim.jpg" alt="Minji Kim"
+            <img src="minji_kim.png" alt="Minji Kim"
                 style="width: 80px; height: 80px; object-fit: cover; border-radius: 6px;">
             <div>
               <h3 style="margin: 0 0 5px;">Minji Kim</h3>
               <p style="margin: 0 0 8px; font-weight: bold;">Business Analyst</p>
-              <p style="margin: 0; color: #555;text-align:justify;">Placeholder Info</p>
+              <p style="margin: 0; color: #555;text-align:justify;">I am currently in my final semester of Bachelor of IT, with internship experience in technology consulting. Through my studies and work experience, I have recently gained an interest in data and business analytics. </p>
             </div>
           </div>
           <div style="background-color: #d9f2d9; padding: 15px 20px; border-radius: 8px; display: flex; gap: 15px;">
